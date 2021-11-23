@@ -1,8 +1,8 @@
-##Awesome Project
+## Awesome Project
 
 ---
 
-###系統架構
+### 系統架構
 <img src='./readmeImg/系統架構.png' />
 
 - React 版本 : 17
@@ -15,7 +15,7 @@
 
 ---
 
-###施作時間
+### 施作時間
 
 - React CLI 環境設置 約 30 分鐘
 - 設置 App Bottom Tab 約一小時半
@@ -24,11 +24,11 @@
 
 ---
 
-###上架流程
+### 上架流程
 
-####Android
+#### Android
 
-###### 1.事前準備
+######  1.事前準備
 
 - 申請 Google Play Console 帳號
 - 程式 Icon
@@ -36,7 +36,7 @@
 - 說明文搞(說明內容會影響 Google 關鍵字搜尋)
 - 手機截圖 \* 2
 
-###### 2.設定 App Signing
+######  2.設定 App Signing
 
 - 至 Google Play Console 選擇 "應用程式簽署"
 - 選擇 " 應用程式版本 "
@@ -45,7 +45,7 @@
 - 選擇 " 使用 Google Play 應用程式簽署 "
 - 選擇 " 同意 " 取得 App Signing Key
 
-###### 3.建立 Keystore
+######  3.建立 Keystore
 
 - 開啟 Android Studio，點選「Build > Generated Signed APK」：
 - 點選「Next」
@@ -64,20 +64,20 @@
     Validity (years): 25
     Certificate: 公司或是個人開發者的資訊
 
-###### 4.設定 Release Config
+######  4.設定 Release Config
 
 - 編輯專案目錄底下的 android/gradle.properties，把星號處換成上一步設定的密碼:
 - 在 Gradle Config 中新增 Signing Config
   - 編輯 app/build.gradle
 
-###### 5.產生簽署過的 APK 檔
+######  5.產生簽署過的 APK 檔
 
 - 編輯 app/build.gradle，修改 applicationId、versionCode 及 versionName
 - 執行 build script
   - $ cd android
   - $ ./gradlew assembleRelease
 
-###### 6.上傳 APK
+######  6.上傳 APK
 
 - 到 Google Play Console 裡，點選「版本管理 > 應用程式版本」
 - 選擇群組，點選『管理」。在測試階段，就選「內部測試群組」。如果要正式上架，就選「正式版測試群組」：
@@ -85,7 +85,7 @@
 - 填寫 Release Note，按「審核」：
 - 上傳完成後保存 Upload Key (未來更新時需使用)
 
-####IOS
-
+#### IOS
+不確定
 - 
 ---
